@@ -28,4 +28,16 @@ private:
 	UPROPERTY(EditAnywhere, Category = "Game Of Life")
 	UStaticMeshComponent* CellMesh;
 
+	UPROPERTY(EditAnywhere, Category = "Game Of Life")
+	UMaterialInterface* AliveMaterial;
+
+	UPROPERTY(EditAnywhere, Category = "Game Of Life")
+	UMaterialInterface* DeadMaterial;
+
+	UPROPERTY(EditAnywhere, Category = "Game Of Life")
+	UMaterialInstanceDynamic* DynamicMaterial;
+
+	UPROPERTY(EditAnywhere, Category = "Game Of Life")
+	float Health = 1.0f; // 1.0f represents fully alive, 0.0f represents fully dead
+
 };

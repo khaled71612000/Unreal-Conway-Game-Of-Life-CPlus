@@ -28,14 +28,16 @@ void AConwayCell::SetState(bool bNewState)
 {
 	bIsAlive = bNewState;
 
-	//if (bIsAlive)
-	//{
-	//	CellMesh->SetVisibility(true);
-	//}
-	//else
-	//{
-	//	CellMesh->SetVisibility(false);
-	//}
+	if (bIsAlive)
+	{
+		//CellMesh->SetVisibility(true);
+		CellMesh->SetMaterial(0, AliveMaterial);
+	}
+	else
+	{
+		//CellMesh->SetVisibility(false);
+		CellMesh->SetMaterial(0, DeadMaterial);
+	}
 }
 
 bool AConwayCell::GetState() const
