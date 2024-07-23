@@ -37,7 +37,8 @@ The `AConwayGridManager` class manages the entire grid of cells, controlling the
 
 This project is inspired by Conway's Game of Life, a cellular automaton devised by mathematician John Conway. Special thanks to the Unreal Engine community for their support and resources. Additional patterns and information are credited to the [Life Patterns Archive](https://www.ibiblio.org/lifepatterns/october1970.html).
 ![image](https://github.com/user-attachments/assets/c9e8f084-7ea9-411b-a7aa-8e49c8cffd65)
-![Uploading image.png…]()
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/0ee4fe08-9bee-4022-8b36-9aa985fa8a24)
+![image](https://github.com/user-attachments/assets/f084894c-36a8-41f2-bb2f-e5ebaeb85e89)
+
 
 
