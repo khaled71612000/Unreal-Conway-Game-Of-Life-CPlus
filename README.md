@@ -1,9 +1,10 @@
+![image](https://github.com/user-attachments/assets/c9e8f084-7ea9-411b-a7aa-8e49c8cffd65)
 # Conway's Game of Life Project
 
 ## Overview
 
 This project implements Conway's Game of Life using Unreal Engine. The simulation displays the evolution of cells on a grid based on simple rules, providing a visual representation of the changes in cell states over time.
-
+![GIF 1](https://media.giphy.com/media/frTLRXHIU6AEzBG2Mp/giphy.gif)
 ## Classes
 
 ### AConwayCell
@@ -39,9 +40,6 @@ This project is inspired by Conway's Game of Life, a cellular automaton devised 
 
 [YouTube Video](https://youtu.be/strNtTR_IoU?si=PYeBxpQX7MS1vYKb)
 
-![GIF 1](https://media.giphy.com/media/frTLRXHIU6AEzBG2Mp/giphy.gif)
-
-![image](https://github.com/user-attachments/assets/c9e8f084-7ea9-411b-a7aa-8e49c8cffd65)
 ![image](https://github.com/user-attachments/assets/0ee4fe08-9bee-4022-8b36-9aa985fa8a24)
 ![image](https://github.com/user-attachments/assets/f084894c-36a8-41f2-bb2f-e5ebaeb85e89)
 
