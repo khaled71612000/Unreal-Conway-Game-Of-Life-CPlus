@@ -6,6 +6,13 @@
 ![C++](https://img.shields.io/badge/C++-00599C?logo=c%2B%2B&logoColor=white)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
+
+## Live Demo
+
+[![Watch Gameplay Demo](https://img.youtube.com/vi/strNtTR_IoU/maxresdefault.jpg)](https://youtu.be/strNtTR_IoU)
+
+> Click the thumbnail above to watch the full demo video.
+
 ## Overview
 
 This project implements Conway's Game of Life using Unreal Engine. The simulation displays the evolution of cells on a grid based on simple rules, providing a visual representation of the changes in cell states over time.
@@ -49,6 +56,17 @@ This project is inspired by Conway's Game of Life, a cellular automaton devised 
 ![image](https://github.com/user-attachments/assets/f084894c-36a8-41f2-bb2f-e5ebaeb85e89)
 
 
+
+
+
+## Tech Stack
+
+| Technology | Role |
+|---|---|
+| Unreal Engine 4/5 | Game engine (Blueprints + C++) |
+| C++ | Gameplay systems, custom components |
+| HLSL / USF | Custom shader authoring |
+| Git LFS | Large asset version control |
 
 
 ## Getting Started
