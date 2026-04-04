@@ -1,6 +1,6 @@
-# Unreal Conway Game Of Life CPlus
+![image](https://github.com/user-attachments/assets/c9e8f084-7ea9-411b-a7aa-8e49c8cffd65)
+# Conway's Game of Life Project
 
-> Conway's Game of Life in Unreal Engine 5 — interactive cellular automaton displaying cell population evolution on a configurable grid with real-time step controls.
 
 ![Unreal Engine](https://img.shields.io/badge/Unreal%20Engine-0E1128?logo=unrealengine&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-00599C?logo=c%2B%2B&logoColor=white)
@@ -8,68 +8,61 @@
 
 ## Overview
 
-Conway's Game of Life in Unreal Engine 5 — interactive cellular automaton displaying cell population evolution on a configurable grid with real-time step controls.
+This project implements Conway's Game of Life using Unreal Engine. The simulation displays the evolution of cells on a grid based on simple rules, providing a visual representation of the changes in cell states over time.
+![GIF 1](https://media.giphy.com/media/frTLRXHIU6AEzBG2Mp/giphy.gif)
+## Classes
 
-Built with **Unreal Engine** and **C++**, demonstrating professional game development patterns: the Actor-Component model, Unreal's reflection system (UPROPERTY/UFUNCTION), Blueprint interoperability, and optimized gameplay systems.
+### AConwayCell
+
+The `AConwayCell` class represents each cell in the Game of Life grid. It manages the state of the cell (alive or dead) and updates the visual representation accordingly.
+
+#### Key Methods
+- `SetState(bool bNewState)`: Sets the state of the cell.
+- `GetState() const`: Returns the current state of the cell.
+
+### AConwayGridManager
+
+The `AConwayGridManager` class manages the entire grid of cells, controlling the simulation's start, stop, and reset functionality. It updates the grid based on the rules of Conway's Game of Life.
+
+#### Key Methods
+- `StartSimulation()`: Starts the simulation.
+- `StopSimulation()`: Stops the simulation.
+- `ResetSimulation()`: Resets the simulation to its initial state.
+- `InitializeGrid()`: Initializes the grid with cell objects.
+- `UpdateGrid()`: Updates the grid based on the rules of the Game of Life.
+- `GetAliveNeighbors(int32 X, int32 Y)`: Returns the count of alive neighbors for a given cell.
 
 ## Features
 
-- Unreal Engine gameplay framework (GameMode, GameState, PlayerController)
-- Custom C++ Actor and Component classes
-- Blueprint-C++ interoperability
-- Physics and collision systems
-- Optimized asset loading
+- **Real-time Simulation**: Updates and renders the cell states in real-time.
+- **User Interaction**: Allows users to start, stop, and reset the simulation.
+- **Adjustable Parameters**: Grid size and update interval can be adjusted.
+- **Visual Representation**: Displays the alive and dead states of cells with different materials.
 
-## Technologies Used
+## Credits
 
-| Technology | Details |
-|------------|---------|
-| Unreal Engine | 4.x / 5.x |
-| C++ | Modern C++17 |
-| Blueprints | Visual scripting |
-| Chaos Physics | Physics simulation |
+This project is inspired by Conway's Game of Life, a cellular automaton devised by mathematician John Conway. Special thanks to the Unreal Engine community for their support and resources. Additional patterns and information are credited to the [Life Patterns Archive](https://www.ibiblio.org/lifepatterns/october1970.html).
 
-## Screenshots / Demo
+[YouTube Video](https://youtu.be/strNtTR_IoU?si=PYeBxpQX7MS1vYKb)
 
-> *No screenshots available yet.*
+![image](https://github.com/user-attachments/assets/0ee4fe08-9bee-4022-8b36-9aa985fa8a24)
+![image](https://github.com/user-attachments/assets/f084894c-36a8-41f2-bb2f-e5ebaeb85e89)
+
+
+
 
 ## Getting Started
 
 ### Prerequisites
-
 - [Unreal Engine](https://www.unrealengine.com/en-US/download) 4.x or 5.x
 - Visual Studio 2019 or 2022 with **Desktop development with C++**
-- Git LFS
+- Git LFS (`git lfs install`)
 
-### Installation
-
+### Setup
 ```bash
 git lfs install
 git clone https://github.com/khaled71612000/Unreal-Conway-Game-Of-Life-CPlus.git
-cd Unreal-Conway-Game-Of-Life-CPlus
 ```
-
-1. Right-click `.uproject` → **Generate Visual Studio project files**
-2. Open `.sln` in Visual Studio
-3. Set config: **Development Editor | Win64**
-4. Build (Ctrl+Shift+B) then launch the editor
-
-## Project Structure
-
-```
-Unreal-Conway-Game-Of-Life-CPlus/
-├── Source/                  # C++ source files
-  Source/ConwayGameOfLife/ConwayCell.cpp
-  Source/ConwayGameOfLife/ConwayCell.h
-  Source/ConwayGameOfLife/ConwayGameOfLife.cpp
-  Source/ConwayGameOfLife/ConwayGameOfLife.h
-  Source/ConwayGameOfLife/ConwayGridManager.cpp
-  Source/ConwayGameOfLife/ConwayGridManager.h
-├── Content/                 # Assets, blueprints, levels
-├── Config/                  # Project settings
-└── Unreal-Conway-Game-Of-Life-CPlus.uproject
-```
-
-## License
-
-[MIT License](LICENSE)
+1. Right-click the `.uproject` → **Generate Visual Studio project files**
+2. Open `.sln` → Build (**Development Editor | Win64**)
+3. Launch via Unreal Editor
