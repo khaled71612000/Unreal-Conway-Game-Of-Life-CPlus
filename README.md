@@ -59,6 +59,16 @@ This project is inspired by Conway's Game of Life, a cellular automaton devised 
 
 
 
+
+## Architecture
+
+Key classes and systems (from source code):
+
+- **`ConwayGameOfLife`** (extends `ModuleRules`) — core game class
+- **`ConwayGameOfLifeTarget`** (extends `TargetRules`) — core game class
+- **`ConwayGameOfLifeEditorTarget`** (extends `TargetRules`) — core game class
+
+
 ## Tech Stack
 
 | Technology | Role |
