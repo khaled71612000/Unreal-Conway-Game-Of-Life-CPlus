@@ -94,3 +94,5 @@ git clone https://github.com/khaled71612000/Unreal-Conway-Game-Of-Life-CPlus.git
 1. Right-click the `.uproject` → **Generate Visual Studio project files**
 2. Open `.sln` → Build (**Development Editor | Win64**)
 3. Launch via Unreal Editor
+
+<!-- repo-rank: 10 -->
